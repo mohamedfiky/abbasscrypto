@@ -146,13 +146,13 @@ ul{
 }
 
 .social-icons a.twitter:hover {
-	color: #55ACEE;
+	color: #1DA1F2;
 }
 .social-icons a.youtube:hover {
-	color: #df3333;
+	color: #f00;
 }
 .social-icons a.instagram:hover {
-	color: #F95B60;
+	color: #C13584;
 }
 
 
@@ -320,13 +320,79 @@ ul.info li div {
 
 /* بي اتصل نموذج */
 
-.contact-form p{
+.contact p{
   color: #727272;
   font-size: 18px;
   line-height:2.5;
   padding: 0 30px 30px;	
 }
 
+.contact .social-follow{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact a{
+  width: 300px;
+  text-align: center;
+  margin: 20px;
+  text-decoration: none;
+  display: inline-block;
+  padding:10px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.contact a i{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.contact .twitter-follow-button{
+  background-color: #1DA1F2;
+  border: 2px solid #1DA1F2;
+
+}
+
+.contact .twitter-follow-button:hover{
+  background-color: #fff;
+  color: #1DA1F2;
+  border: 2px solid #1DA1F2;
+}
+
+.contact .instagram-follow-button{
+
+  background-color: #C13584;
+  border: 2px solid #C13584;
+}
+
+.contact .instagram-follow-button:hover{
+
+  background-color: #fff;
+  color: #C13584;
+  border: 2px solid #C13584;
+}
+
+.contact .direct-mail{
+
+  background-color: #043e3f;
+  border: 2px solid #043e3f;
+}
+
+.contact .direct-mail:hover{
+
+  background-color: #fff;
+  color: #043e3f;
+  border: 2px solid #043e3f;
+}
+
+
+
+
+/******
 
 #contactform {
   margin: 70px auto;
@@ -376,7 +442,10 @@ ul.info li div {
   color: #043e3f;
 }
 
+*******/
 
+
+/*******************************************************************/
 
 /*****
 
