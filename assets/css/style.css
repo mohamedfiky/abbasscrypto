@@ -93,7 +93,85 @@ ul{
 
 /**************************************************************************************/
 
+/****** UPPER NAV  الناف العلوى *******/
 
+.upper-nav {
+  background: #f5f5f5;
+  text-align:center;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upper-nav .logo-area img{
+  width: 120px;
+  height: 120px;
+}
+
+.upper-nav .logo-area h1{
+  font-size: 18px;
+  color: #727272;
+
+}
+
+.upper-nav .nav {
+  padding: 10px 20px;	
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upper-nav .nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.upper-nav .nav a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #7C7C7C;
+  display: inline-block;
+  padding: 16px;
+
+}
+
+.upper-nav .nav li:hover {
+	background-color:#8A8A8A;
+}
+
+.upper-nav .nav li:hover a{
+		color:#fff;	
+}
+
+.upper-nav .social-icons {
+  text-align: center;
+  margin-right: 30px;
+}
+
+.upper-nav .social-icons a {
+  color: #7C7C7C;
+  font-size: 24px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-grid;
+  padding:8px;
+}
+
+.upper-nav .social-icons a.twitter:hover {
+	color: #1DA1F2;
+}
+.upper-nav .social-icons a.youtube:hover {
+	color: #f00;
+}
+.upper-nav .social-icons a.instagram:hover {
+	color: #C13584;
+}
+
+
+/**********************/
 
 
 /* الايمن النصف */
@@ -104,18 +182,18 @@ ul{
   text-align:center;
 }
 
-.right-side h1{
+.right-side .logo-area h1{
   font-size: 18px;
   color: #727272;
 
 }
 
-.nav {
+.right-side .nav {
   padding: 10px 20px;	
 }
 
 
-.nav a {
+.right-side .nav a {
   font-size: 18px;
   text-decoration: none;
   color: #7C7C7C;
@@ -124,19 +202,19 @@ ul{
 
 }
 
-.nav li:hover {
+.right-side .nav li:hover {
 	background-color:#8A8A8A;
 }
 
-.nav li:hover a{
+.right-side .nav li:hover a{
 		color:#fff;	
 }
 
-.social-icons {
+.right-side .social-icons {
   text-align: center;
 }
 
-.social-icons a {
+.right-side .social-icons a {
   color: #7C7C7C;
   font-size: 30px;
   height: 40px;
@@ -145,13 +223,13 @@ ul{
   padding:12px;
 }
 
-.social-icons a.twitter:hover {
+.right-side .social-icons a.twitter:hover {
 	color: #1DA1F2;
 }
-.social-icons a.youtube:hover {
+.right-side .social-icons a.youtube:hover {
 	color: #f00;
 }
-.social-icons a.instagram:hover {
+.right-side .social-icons a.instagram:hover {
 	color: #C13584;
 }
 
@@ -275,46 +353,7 @@ ul.info li div {
   color:#043e3f;
 }
 
-/******
 
-.my-services ul {
-  margin-top: 50px;
-  margin-right: 7px;
-  text-align: center;
-}
-.my-services ul li {
-  width: 335px;
-  display: inline-block;
-  background-color: #043e3f;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
-.my-services ul li div i{
-	text-align:center;
-	font-size:20px;
-}
-.my-services ul li div h4 {
-  color: #FFFFFF;
-  font-size: 30px;
-  text-align: center;
-  background-color: rgb(81, 81, 81);
-  padding: 5px 15px;
-  display: initial;
-  line-height: 82px;
-    border-top-left-radius: 10px;
-}
-.my-services ul li div p {
-  font-size: 17px;
-  line-height: 2.3em;
-  padding: 1px 30px;
-  text-align: center;
-  color: #FFFFFF;
-  margin-bottom: 10px;
-}
-
-***********/
 
 /***************************************************************************/
 
@@ -391,179 +430,7 @@ ul.info li div {
 
 
 
-
-/******
-
-#contactform {
-  margin: 70px auto;
-  animation: bounceIn 1s ease-in;
-
-}
-
-#contactform input,
-#contactform textarea{
-  display: block;
-  padding:12px;
-  width:60%;
-  margin:20px auto;
-  border:1px solid #043e3f;
-  font-size: 18px;
-  border-radius: 6px;
-  outline: none;
-}
-
-#contactform input:focus,
-#contactform textarea:focus{
-  border: 2px solid #043e3f;
-}
-
-::-webkit-input-placeholder{
-  color:#777;
-}
-
-::-moz-placeholder{
-  color:#777;
-}
-
-::placeholder{
-  color:#777;
-}
-
-#contactform input[type="submit"]{
-  width: 20%;
-  background-color: #043e3f;
-  color:#fff;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-#contactform input[type="submit"]:hover{
-  background-color:#fff;
-  color: #043e3f;
-}
-
-*******/
-
-
 /*******************************************************************/
-
-/*****
-
-#contactform label {
-	position: relative;
-	z-index: 13;
-	padding-left: 10px;
-  line-height: 76px;
-  color: #043e3f;
-}
-
-#contactform input,
-#contactform textarea{
-	display: block;
-	position: relative;
-	overflow: hidden;
-	min-height: 50px;
-	margin-top: -65px;
-	line-height: 50px;
-	font-size: 1em;
-	padding-left: 30px;
-	padding-right: 10px;
-	width: 100%;
-	color: #666666;
-	background: #ffffff;
-	border:2px solid #043e3f;
-}
-
-
-#contactform textarea {
-  line-height: 25px;
-  width: 100%;
-  min-height: 120px;
-  margin: -65px 0 0px 0px;
-  width: 341px;
-  height: 122px;
-}
-
-
-#contactform input:focus,
-#contactform textarea:focus,
-#contactform select:focus {
-	background-color: #ffffff;
-	color: #1a1a1a;
-}
-
-#contactform input.submit {
-  -webkit-appearance: none;
-  cursor: pointer;
-  margin: 225px 66px 0 -104px;
-  width: auto;
-  height: auto;
-  border: 0;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  line-height: 0;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;
-  padding: 10px 20px;
-  color: #ffffff;
-  background: #043e3f;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  text-align: center;
-}
-
-#contactform input.submit:hover {
-	color: #ffffff;
-	background: #1a1a1a;
-}
-
-#contactform input[type="submit"][disabled] {
-	color: #ffffff;
-	background: #bba454;
-}
-
-.six.columns {
-  width: 340px;
-}
-.column, .columns {
-  float: left;
-  display: inline;
-  margin-left: 0px;
-  margin-right: 11px;
-}
-
-*******/
-
-
-
-
-
-/****
-
-الجزء ده مسحته من ال html
-
-.contact-info {
-  text-align: right;
-  margin-right: 42px;
-  display: -webkit-inline-box;
-  line-height: 130px;
-}
-.contact-info ul li {
-  display: inline-block;
-  margin-left: 18px;
-  font-size: 14px;
-  color: #828282;
-}
-.contact-info ul li i {
-  margin-left: 5px;
-  color: #4c4d4f;
-  font-size: 16px;
-}
-
-********/
-
 /*********************************************************/
 
 /* إدعمنى نموذج */
@@ -591,9 +458,7 @@ ul.info li div {
   padding:40px 0;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  
-  
+  flex-wrap: wrap; 
 }
 
 .support .support-methods .method{
@@ -611,7 +476,6 @@ ul.info li div {
 
 .support .support-methods .method .method-logo img{
   width:100%;
-
 }
 
 .support .support-methods .method h4{
@@ -628,12 +492,10 @@ ul.info li div {
 .support .support-methods .method .barcode{
   width:150px;
   margin: auto;
-
 }
 
 .support .support-methods .method .barcode img{
   width:100%;
-
 }
 
 
@@ -663,6 +525,34 @@ ul.info li div {
   }
 
 
+}
+
+@media (max-width : 991px){
+
+  .both-sides{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .right-side{
+    display: none;
+  }
+
+  .left-side {
+    min-height: 800px;
+    width: 100%;
+
+  }
+
+
+}
+
+@media (min-width : 992px){
+
+  .upper-nav{
+    display: none;
+  }
+
 
 }
 
@@ -678,111 +568,6 @@ ul.info li div {
 /**********************************************************/
 /**********************************************************/
 
-
-/* @media screen and (max-width:414px){
-body{
-	width:414px;	
-}	
-.right-side {
-  margin-right: 10px;
-  float: right;
-  margin-bottom:0;
-  height:800px;
-
-}
-.left-side {
-  width: 390px;
-  margin-left: 14px;
-  margin-top:0;
-    height: auto;
-}
-
-.img-post {
-  width: 345px;
-}
-.post .post-body {
-  width: 373px;
-  margin: 36px 20px;
-}
-.img-single {
-  width: 342px;
-}
-
-.my-services ul {
-  margin-right: 0;
-}
-.info li:nth-child(5) {
-margin-bottom: 63px;
-}
-.info li {
-  margin-right: 57px;
-}
-
-
-.footer {
-
-  width: 357px;
-  margin-left: 15px;
-}
-#contactform {
-  margin: 20px -25px auto 5px !important;
-
-}
-#contactform input.submit {
-  margin: 32px -14px 0 127px !important;
-}
-.contact-info {
-  line-height: 50px !important;
-}
-}
-
-/******************************************************************/
-
-/* @media screen and (width:768px){
-body{
-	width:768px;	
-}
-.right-side {
-  height: 800px;
-  margin-right: 15px;
-  width: 735px;
-}
-
-.left-side {
-  margin-top: 0;
-  width: 735px;
-  margin-left: 18px;
-  height:auto;
-}
-.info div {
-  margin-right: 97px;
-}
-.info li:nth-child(5) {
-margin-bottom: 63px;
-}
-
-
-.footer {
-  width: 703px;
-  margin-left: 18px;
-  margin-bottom: 60px;
-}
-.post .post-body {
-  width: 389px;
-}
-.img-single {
-  width: 682px;
-}
-.my-services ul li {
-  margin-right: 13px;
-}
-#contactform {
-  margin-right: -23px;
-}
-
-}  */
-
-/***************************************************************/
 /***************************************************************/
 /***************************************************************/
 /***************************************************************/
@@ -795,7 +580,7 @@ margin-bottom: 63px;
 
 
 
-/* الحركات */
+/* Animation   الأنيميشن */
 
 /*******************************/
 
