@@ -10,7 +10,7 @@
   padding:0;
   margin:0;
   font-family: 'Cairo', sans-serif;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 
 }
 
@@ -36,6 +36,7 @@ ul{
 
 .both-sides{
   display: flex;
+  overflow: hidden;
 }
 
 
@@ -102,7 +103,9 @@ ul{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  display: none;
 }
+
 
 .upper-nav .logo-area img{
   width: 120px;
@@ -115,31 +118,23 @@ ul{
 
 }
 
-.upper-nav .nav {
-  padding: 10px 20px;	
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .upper-nav .nav ul{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-.upper-nav .nav a {
-  font-size: 18px;
+.upper-nav .nav ul li a {
+  font-size: 17px;
   text-decoration: none;
   color: #7C7C7C;
   display: inline-block;
-  padding: 16px;
-
+  padding: 5px 10px;
 }
 
 .upper-nav .nav li:hover {
 	background-color:#8A8A8A;
+  border-radius: 4px;
 }
 
 .upper-nav .nav li:hover a{
@@ -148,7 +143,6 @@ ul{
 
 .upper-nav .social-icons {
   text-align: center;
-  margin-right: 30px;
 }
 
 .upper-nav .social-icons a {
@@ -158,6 +152,7 @@ ul{
   line-height: 30px;
   display: inline-grid;
   padding:8px;
+  text-decoration: none;
 }
 
 .upper-nav .social-icons a.twitter:hover {
@@ -516,12 +511,38 @@ ul.info li div {
 
 /*  media query */
 
+
+@media (max-width : 395px){
+
+  .upper-nav .nav ul li a {
+    font-size: 15px;
+    padding: 5px 8px;
+  }
+
+
+  .support .support-methods .method .barcode{
+    width:120px;
+  }
+
+
+}
+
+
+
 @media (max-width : 768px){
 
   .support .support-methods .method{
-    
     width: 70%;
     margin: 0 auto 40px ;
+  }
+
+  .upper-nav{
+    flex-direction: column;
+    padding:12px 20px;
+  }
+
+  .upper-nav .nav{
+    margin: 20px auto;
   }
 
 
@@ -533,6 +554,10 @@ ul.info li div {
     display: flex;
     flex-direction: column;
   }
+
+  .upper-nav{
+    display: flex;
+  }
   
   .right-side{
     display: none;
@@ -541,20 +566,11 @@ ul.info li div {
   .left-side {
     min-height: 800px;
     width: 100%;
-
   }
 
 
 }
 
-@media (min-width : 992px){
-
-  .upper-nav{
-    display: none;
-  }
-
-
-}
 
 
 
