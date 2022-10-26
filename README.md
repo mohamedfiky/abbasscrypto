@@ -10,9 +10,6 @@ Tools used:
 
 - CSS
 
-- JavaScript
-
-- formsubmit
 
 **Responsive** website.
 
