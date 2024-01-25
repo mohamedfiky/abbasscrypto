@@ -78,6 +78,7 @@ ul{
   animation-name: fadeInDown;
   animation-duration: 1s;
 }
+
 .hr-content span {
   width: 30px;
   height: 30px;
@@ -92,30 +93,34 @@ ul{
   border: 8px solid #FFF;
 }
 
+
 /**************************************************************************************/
 
 /****** UPPER NAV  الناف العلوى *******/
 
 .upper-nav {
-  background: #f5f5f5;
+  background: #EFF0F1;
   text-align:center;
-  padding: 5px 20px;
+  padding: 0px 20px 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   display: none;
 }
 
-
-.upper-nav .logo-area img{
-  width: 120px;
-  height: 120px;
+.upper-nav .logo-area{
+  margin-top: -20px;
 }
 
 .upper-nav .logo-area h1{
   font-size: 18px;
   color: #727272;
+  margin-top: -50px;
+}
 
+.upper-nav .nav{
+  margin: -6px auto;
 }
 
 .upper-nav .nav ul{
@@ -125,11 +130,11 @@ ul{
 }
 
 .upper-nav .nav ul li a {
-  font-size: 17px;
+  font-size: 18px;
   text-decoration: none;
   color: #7C7C7C;
   display: inline-block;
-  padding: 5px 10px;
+  padding: 5px 14px;
 }
 
 .upper-nav .nav li:hover {
@@ -141,46 +146,46 @@ ul{
 		color:#fff;	
 }
 
-.upper-nav .social-icons {
-  text-align: center;
+.upper-nav .social-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .upper-nav .social-icons a {
-  color: #7C7C7C;
-  font-size: 24px;
-  height: 30px;
-  line-height: 30px;
-  display: inline-grid;
-  padding:8px;
-  text-decoration: none;
+  padding: 7px 15px;
+  width: 60px;
+  margin: 3px;
+  filter: grayscale(.95);
 }
 
-.upper-nav .social-icons a.twitter:hover {
-	color: #1DA1F2;
+.upper-nav .social-icons a:hover{
+  filter: grayscale(0);
 }
-.upper-nav .social-icons a.youtube:hover {
-	color: #f00;
+
+.upper-nav .social-icons a img{
+  width:100%;
 }
-.upper-nav .social-icons a.instagram:hover {
-	color: #C13584;
-}
+
 
 
 /**********************/
 
 
 /* الايمن النصف */
+
 .right-side {
   min-height: 800px;
   width: 30%;
-  background: #f5f5f5;
+  background: #EFF0F1;
   text-align:center;
 }
 
 .right-side .logo-area h1{
   font-size: 18px;
   color: #727272;
-
+  margin-top: -30px;
 }
 
 .right-side .nav {
@@ -205,28 +210,31 @@ ul{
 		color:#fff;	
 }
 
-.right-side .social-icons {
-  text-align: center;
+.right-side .social-icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width:225px;
+  margin: auto;
 }
 
-.right-side .social-icons a {
-  color: #7C7C7C;
-  font-size: 30px;
-  height: 40px;
-  line-height: 40px;
-  display: inline-grid;
-  padding:12px;
+.right-side .social-icons a{
+  padding: 7px 15px;
+  width: 60px;
+  margin: 6px;
+  filter: grayscale(.95);
 }
 
-.right-side .social-icons a.twitter:hover {
-	color: #1DA1F2;
+.right-side .social-icons a:hover{
+  filter: grayscale(0);
 }
-.right-side .social-icons a.youtube:hover {
-	color: #f00;
+
+.right-side .social-icons a img{
+  width:100%;
 }
-.right-side .social-icons a.instagram:hover {
-	color: #C13584;
-}
+
+
 
 
 /**********************/
@@ -257,6 +265,30 @@ ul{
   margin-bottom: 20px;
   text-align: center;
 }
+
+
+/**********************/
+
+/* الصفحة ذيل */
+
+/**********************/
+
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 15px;
+  background-color: #666;
+}
+
+footer p{
+  padding: 0 20px;
+}
+
 
 
 
@@ -346,6 +378,7 @@ ul.info li div {
 
 .my-services p a:hover{
   color:#043e3f;
+  text-decoration: underline;
 }
 
 
@@ -410,6 +443,56 @@ ul.info li div {
   border: 2px solid #C13584;
 }
 
+.contact .opensea-follow-button{
+  background-color: #2081E2;
+  border: 2px solid #2081E2;
+
+}
+
+.contact .opensea-follow-button:hover{
+  background-color: #fff;
+  color: #2081E2;
+  border: 2px solid #2081E2;
+}
+
+.contact .rarible-follow-button{
+  color:#000000;
+  background-color: #FEDA03;
+  border: 2px solid #FEDA03;
+}
+
+.contact .rarible-follow-button:hover{
+  background-color: #fff;
+  color: #000000;
+  border: 2px solid #FEDA03;
+}
+
+.contact .telegram-follow-button{
+
+  background-color: #2481CC;
+  border: 2px solid #2481CC;
+}
+
+.contact .telegram-follow-button:hover{
+
+  background-color: #fff;
+  color: #2481CC;
+  border: 2px solid #2481CC;
+}
+
+.contact .youtube-follow-button{
+
+  background-color: #FF0000;
+  border: 2px solid #FF0000;
+}
+
+.contact .youtube-follow-button:hover{
+
+  background-color: #fff;
+  color: #FF0000;
+  border: 2px solid #FF0000;
+}
+
 .contact .direct-mail{
 
   background-color: #043e3f;
@@ -448,20 +531,32 @@ ul.info li div {
   font-size: 18px;
 }
 
+.support ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.support ul li a:hover{
+  color:#043e3f;
+  text-decoration: underline;
+}
+
+
 .support .support-methods{
   text-align: center;
   padding:40px 0;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap; 
 }
 
 .support .support-methods .method{
   border:1px solid #043e3f ;
-  padding:10px 15px;
+  padding:20px 15px;
   border-radius: 6px;
   width: 46%;
-  margin-bottom: 40px;
 }
 
 .support .support-methods .method .method-logo{
@@ -476,91 +571,18 @@ ul.info li div {
 .support .support-methods .method h4{
   font-size: 14px;
   border-top:1px solid #727272;
-  border-bottom:1px solid #727272;
   color: #727272;
   padding:20px;
-  margin:20px auto;
+  margin:20px auto 0px;
   word-wrap:break-word;
 }
 
 
-.support .support-methods .method .barcode{
-  width:150px;
-  margin: auto;
-}
-
-.support .support-methods .method .barcode img{
-  width:100%;
-}
-
 
 /********************************************************/
 
-/* الصفحة ذيل */
-.footer {
-  color: #FFF;
-  text-align: center;
-  font-size: 16px;
-  padding: 15px;
-  background-color: #666;
-}
-
-
-/**********************************************************/
-
 
 /*  media query */
-
-
-@media (max-width : 395px){
-
-  .upper-nav .nav ul li a {
-    font-size: 15px;
-    padding: 5px 8px;
-  }
-
-
-  .support .support-methods .method .barcode{
-    width:120px;
-  }
-
-
-}
-
-
-@media (max-width : 500px){
-
-  .profile-text{
-    padding: 0 5px;
-  }
-  
-  .my-services p,
-  .contact p{
-    padding: 0 5px 30px;		
-  }
-  
-
-}
-
-
-@media (max-width : 768px){
-
-  .support .support-methods .method{
-    width: 70%;
-    margin: 0 auto 40px ;
-  }
-
-  .upper-nav{
-    flex-direction: column;
-    padding:12px 20px;
-  }
-
-  .upper-nav .nav{
-    margin: 20px auto;
-  }
-
-
-}
 
 
 @media (max-width : 991px){
@@ -587,17 +609,89 @@ ul.info li div {
 }
 
 
+@media (max-width : 768px){
+
+  .support .support-methods .method{
+    width: 70%;
+    margin: 0 auto 20px ;
+  }
+
+}
 
 
-/**********************************************************/
-/**********************************************************/
-/**********************************************************/
-/**********************************************************/
-/**********************************************************/
+@media (max-width : 500px){
 
-/**********************************************************/
-/**********************************************************/
-/**********************************************************/
+  .upper-nav .nav ul li a {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  .upper-nav .social-icons{
+    width:225px;
+  }
+
+  .upper-nav .social-icons a {
+    padding: 7px 15px;
+    width: 60px;
+    margin: 1px;
+    filter: grayscale(.95);
+  }
+
+  .profile-text{
+    padding: 0 5px;
+  }
+  
+  .my-services p,
+  .contact p{
+    padding: 0 5px 30px;		
+  }
+
+  .support .support-methods .method{
+    width: 90%;
+    margin: 0 auto 20px ;
+  }
+
+  footer{
+    flex-direction: column;
+  }
+
+  footer p{
+    padding: 4px 0;
+  }
+
+}
+
+
+@media (max-width : 395px){
+
+  .upper-nav .nav ul li a {
+    font-size: 15px;
+    padding: 5px 7px;
+  }
+
+
+  .contact a{
+    width:270px;
+  }
+
+
+  .support .support-methods .method{
+    width: 100%;
+    margin: 0 auto 20px ;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 /***************************************************************/
 /***************************************************************/
